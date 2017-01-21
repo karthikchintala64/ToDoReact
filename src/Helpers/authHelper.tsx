@@ -11,7 +11,7 @@ export const Login = () => {
 
 export const GetAccessToken = () => {
     window.location.href = "https://login.microsoftonline.com/" + TENANT_ID +
-        "/oauth2/authorize?response_type=token&client_id=" + CLIENT_ID +
+        "/oauth2/authorize?response_type=tokeny&client_id=" + CLIENT_ID +
         "&resource=" + GRAPH_RESOURCE +
         "&redirect_uri=" + encodeURIComponent(window.location.origin) +
         "&prompt=none&state=SomeState&nonce=SomeNonce";
