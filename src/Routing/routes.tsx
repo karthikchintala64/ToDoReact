@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import { syncHistoryWithStore } from  'react-router-redux';
 
 import { store } from '../store';
@@ -8,11 +8,11 @@ import Home from '../components/home';
 import Layout from '../components/layout';
 import * as authHelper from '../helpers/authhelper';
 
-const history= syncHistoryWithStore(browserHistory, store);
+const history= syncHistoryWithStore(hashHistory, store);
 
 const isAuthenticated = () => {
     if(!authHelper.isAuthenticated())
-        browserHistory.push('/');
+        hashHistory.push('/');
 }
 
 export default(

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { browserHistory } from 'react-router';
+import { hashHistory } from 'react-router';
 
 import * as authHelper from '../helpers/authhelper';
 
@@ -19,7 +19,7 @@ class Login extends React.Component<any, any> {
                 authHelper.Login();
         }
 
-        browserHistory.push('/home');
+        hashHistory.push('home');
     }
 
     render() {

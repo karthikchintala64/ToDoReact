@@ -1,4 +1,8 @@
-Create New Branch: git checkout -b <Branch-Name>
-Push changes to Branch: git push origin <Branch_Name>
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/karthikchintala64/ToDoReact.git
+git push -u origin <Branch_Name>
+git checkout -b <Branch-Name>
 
-See All Branches: git branch
+git branch
