@@ -1,0 +1,4 @@
+Create New Branch: git checkout -b <Branch-Name>
+Push changes to Branch: git push origin <Branch_Name>
+
+See All Branches: git branch
