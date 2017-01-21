@@ -1,4 +1,4 @@
-import { browserHistory } from 'react-router';
+import { hashHistory } from 'react-router';
 
 import { CLIENT_ID, GRAPH_RESOURCE, TENANT_ID } from '../constants';
 
@@ -19,7 +19,7 @@ export const GetAccessToken = () => {
 
 export const SetAccessToken = (token:string) => {
     localStorage.setItem('access_token', token);
-                browserHistory.push('home');
+                hashHistory.push('home');
 }
 
 export const isAuthenticated = () => {
