@@ -9,6 +9,10 @@ export const Login = () => {
         "&state=SomeState&nonce=SomeNonce";
 }
 
+export const Logout =() =>{
+    localStorage.removeItem('access_token');
+}
+
 export const GetAccessToken = () => {
     window.location.href = "https://login.microsoftonline.com/" + TENANT_ID +
         "/oauth2/authorize?response_type=token&client_id=" + CLIENT_ID +
